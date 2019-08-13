@@ -1,13 +1,14 @@
 import React from "react";
 
-import video from "../../videos/20190727_112457_708.mp4"
+import videos from "../../data";
+import classes from "./VideoPage.module.css";
 
 const VideoPage = (props) => {
-  // const id = props.match.params.id
+  const id = props.match.params.id
   return (
-    <a-scene>
+    <a-scene className={classes.scene}>
       <a-assets>
-        <video id="trey" autoPlay loop={true} src={video}> </video>
+        <video id="trey" autoPlay loop={true} src={videos[id].video}> </video>
       </a-assets>
       <a-videosphere src="#trey"></a-videosphere>
     </a-scene>
