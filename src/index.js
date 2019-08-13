@@ -11,7 +11,7 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 import "./index.css";
 
 const httpLink = createHttpLink({
-  uri: "http://localhost:4000"
+  uri: "https://excurzion-prisma.herokuapp.com/"
 });
 
 const client = new ApolloClient({
