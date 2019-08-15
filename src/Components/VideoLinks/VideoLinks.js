@@ -18,7 +18,7 @@ import videos from "../../data";
 //   }`;
 
 const VideoLinks = () => (
-  <section className={classes.section}>
+  <section className="col-12 col-md-10 pt-5 px-0 flex-column">
     {/* <Query query={feedQuery}>
       {({ loading, error, data }) => {
         if (loading) return <div>Fetching</div>

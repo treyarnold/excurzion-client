@@ -6,8 +6,11 @@ import VideoLinks from "../VideoLinks/VideoLinks";
 
 const Main = () => (
   <main className={classes.main}>
-    <Navigation />
-    <VideoLinks />
+    <div className="row vw-100">
+      <Navigation />
+      <VideoLinks />
+
+    </div>
   </main>
 );
 
